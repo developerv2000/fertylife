@@ -17,6 +17,7 @@
 
 body {
     font-family: 'Candara', Calibri, Segoe, Segoe UI, Optima, Arial, sans-serif;
+    color: var(--main-color);
     background:
         conic-gradient(from 180deg, #EDF4FB, #FBE8E9) no-repeat left top / 100% 4220px,
         conic-gradient(from 0deg, #FBE8E9, #EDF4FB) repeat left 4220px / 100% calc(100% - 4220px);
@@ -59,12 +60,68 @@ img {
     line-height: 1.15;
 }
 
+.secondary-title {
+    font-size: 37px;
+}
+
 .main-color {
     color: var(--main-color);
 }
 
 .secondary-color {
     color: var(--secondary-color);
+}
+    
+.divider {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9;
+}
+
+/* Main List */
+.main-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.main-list__li {
+    font-size: 24px;
+}
+
+/* Bad Notification */
+.bad-notification {
+    color: rgb(0 0 0 / 10%);
+    text-align: center;
+}
+
+.bad-notification__title {
+    font-size: 37px;
+}
+
+.bad-notification__text {
+    font-size: 25px;
+    margin-bottom: 0;
+}  
+
+/* Buttons */
+.main-button {
+    display: flex;
+    align-items: center;
+    padding: 4px 140px;
+    font-size: 37px;
+    font-weight: bold;
+    font-family: 'Candara', Calibri, Segoe, Segoe UI, Optima, Arial, sans-serif;
+    color: white;
+    background-color: var(--secondary-color);
+    border-radius: 12px;
+    border: none;
+}
+
+.main-button--iconed {
+    padding: 6px 44px;
 }
 
 /* Header */
@@ -103,23 +160,14 @@ img {
 
 /* Intro */
 .intro {
-    height: calc(100vh - 100px);
     position: relative;
     overflow: hidden;
     background: url('../images/intro-image.svg') no-repeat center calc(100% - 50px) / auto 650px;
 }
 
 .intro__inner {
-    height: 100%;
+    min-height: calc(100vh - 100px);
     align-items: center;
-}
-
-.intro__divider {
-    position: absolute;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 9;
 }
 
 .intro__leftside-blue-ellipse {
@@ -175,16 +223,331 @@ img {
     font-size: 37px;
     font-weight: 400;
     line-height: 1.2;
-    color: var(--main-color);
     margin: 0;
 }
 
 /* Plan */
 .plan {
-    background: url('../images/red-divider.svg') repeat-x left top / contain;
+    position: relative;
 }
 
 .plan__inner {
-    padding-top: 200px;
-    padding-bottom: 240px;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.plan__about {
+    padding-top: 60px;
+    display: flex;
+    align-items: center;
+    gap: 200px;
+    margin-bottom: 80px;
+}
+
+.plan__calendar-wrapper {
+    width: 50%;
+    position: relative;
+}
+
+.plan__calendar-red-ellipse {
+    position: absolute;
+    width: 620px;
+    height: 620px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(240 78 86 / 10%);
+    filter: blur(200px);
+}
+
+.plan__desc {
+    width: 50%;
+}
+
+.plan__desc-text {
+    max-width: 730px;
+    line-height: 1.2;
+    font-size: 37px;
+}
+
+.plan__duet-wrapper {
+    position: relative;
+}
+
+.plan__duet {
+    max-width: 1080px;
+}
+
+.plan__deut-title {
+    margin-bottom: 48px;
+}
+
+.plan__duet-cards {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.main-card__image {
+    width: 118px;
+}
+
+.main-card__title {
+    margin-bottom: 0px;
+}
+
+.main-card__subtitle {
+    margin: 0;
+    font-size: 37px;
+}
+
+.main-card--fertivita {
+    color: var(--secondary-color);
+}
+
+.plan__duet-heart {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    transform: rotate(20deg);
+}
+
+/* Duet */
+.duet {
+    position: relative;
+}
+
+.duet__inner {
+    min-height: 100vh;
+    padding-top: 120px;
+    padding-bottom: 100px;
+    flex-direction: column;
+}
+
+.duet__sides-wrapper {
+    position: relative;
+    width: 100%;
+    display: flex;
+}
+
+.duet__sides-wrapper-icon {
+    position: absolute;
+    top: 320px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.duet__side {
+    width: 50%;
+    padding-bottom: 80px;
+}
+
+.duet__side--left {
+    padding-right: 200px;
+}
+
+.duet__side--right {
+    padding-left: 200px;
+}
+
+.duet__image-container {
+    position: relative;
+    padding-top: 240px;
+    padding-bottom: 140px;
+}
+
+.duet__image-pack {
+    position: absolute;
+    top: 54px;
+    z-index: -1;
+}
+
+.duet__side--right .duet__image-pack {
+    right: 0px;
+}
+
+.duet__title {
+    position: absolute;
+    bottom: 40px;
+    writing-mode: vertical-lr;
+    font-size: 80px;
+    color: #CFD3DA;
+    transform: scale(-1);
+    z-index: 0;
+    line-height: 0;
+}
+
+.duet__side--right .duet__title {
+    right: 0px;
+}
+
+.duet__action {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.duet__action-item {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.duet__action-title {
+    margin-bottom: 0;
+}
+ 
+/* Advantages */
+.advantages {
+    position: relative;
+}
+
+.advantages__inner {
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.advantages__blocks-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    padding-top: 40px;
+    padding-bottom: 80px;
+}
+
+.advantages-block__sides-wrapper {
+    display: flex;
+}
+
+.advantages__block-title {
+    margin-bottom: 40px;
+}
+
+.advantages__block-subtitle {
+    margin-bottom: 20px;
+}
+
+.advantages__block-leftside {
+    position: relative;
+    width: 50%;
+    padding-right: 200px;
+}
+
+.advantages__block-rightside {
+    position: relative;
+    width: 50%;
+    padding-left: 200px;
+}
+
+.advantages__block-leftside-icon {
+    position: absolute;
+    right: 28px;
+    top: 0;
+}
+
+.advantages__block-rightside-icon {
+    position: absolute;
+    left: 28px;
+    top: 0;
+}
+
+/* Order */
+.order {
+    position: relative;
+}
+
+.order__inner {
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 80px;
+}
+
+.order__title {
+    margin-bottom: 48px;
+    color: var(--secondary-color);
+}
+
+.order__row {
+    display: flex;
+    gap: 40px;
+    padding-bottom: 40px;
+}
+
+.order__row-leftside {
+    width: 52%;
+}
+
+.order__offer-title {
+    margin-bottom: 20px;
+}   
+
+.order__offer-text {
+    font-size: 24px;
+    margin: 0;
+}
+
+.order__form {
+    margin-top: 40px;
+}
+
+.order__form-title {
+    margin-bottom: 28px;
+}
+
+.order__form-buttons {
+    display: flex;
+    gap: 40px;
+}   
+
+.order__image {
+    width: 48%;
+}
+
+/* Footer */
+.footer {
+    position: relative;
+}
+
+.footer__inner {
+    padding-top: 48px;
+    padding-bottom: 52px;
+}
+
+.footer__row {
+    display: flex;
+    width: 100%;
+}
+
+.footer__leftside {
+    width: 50%;
+}
+
+.footer__title {
+    font-size: 24px;
+    margin: 0;
+}
+
+.footer__text {
+    font-size: 24px;
+    margin: 0;
+}
+
+.footer__rightside {
+    position: relative;
+    width: 50%;
+    text-align: right;
+}
+
+.albion-logo {
+    position: absolute;
+    top: 0;
+    left: 0;
 }
