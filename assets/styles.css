@@ -127,8 +127,9 @@ img {
 
 .model-viewer-wrapper {
     width: 100%;
-    height: 480px;
+    height: 580px;
     position: relative;
+    z-index: 999;
 }
 
 model-viewer {
@@ -372,7 +373,7 @@ model-viewer {
 
 .duet__image-container {
     position: relative;
-    padding-top: 240px;
+    padding-top: 180px;
     padding-bottom: 140px;
 }
 
