@@ -14,14 +14,14 @@
     <!-- Header -->
     <header class="header">
         <div class="header__inner main-container">
-            <a class="logo" href="/">
+            <a class="logo" href="#">
                 <img class="logo__image" src="images/logo.svg" alt="spey logo">
             </a>
 
             <nav class="navbar">
                 <a class="navbar__link" href="#plan">Планирование</a>
-                <a class="navbar__link" href="#advantages">Для нее</a>
-                <a class="navbar__link" href="#advantages">Для него</a>
+                <a class="navbar__link" href="#duet">Для вас</a>
+                <a class="navbar__link" href="#advantages">Комплекс</a>
                 <a class="navbar__link" href="#order">Где купить</a>
             </nav>
         </div>
@@ -61,7 +61,7 @@
 
                 <div class="plan__desc">
                     <p class="plan__desc-text">
-                        <strong>Планирование беременности –</strong>
+                        <strong>Планирование беременности –</strong><br>
                         это важный этап в жизни каждой семьи.<br><br>
                         Хотите сделать этот этап максимально комфортным и повысить шансы на зачатие здорового ребенка?
                     </p>
@@ -100,7 +100,7 @@
     </div> <!-- Plan end -->
 
     <!-- Duet -->
-    <div class="duet">
+    <div class="duet" id="duet">
         <div class="duet__inner main-container">
             <img class="divider" src="images/blue-divider.svg" alt="divider">
 
@@ -112,6 +112,7 @@
                 <div class="duet__side duet__side--left">
                     <div class="duet__image-container">
                         <img class="duet__image-pack" src="images/fertilife-pack.png" alt="Фертилайф упаковка">
+                        <div class="duet__image-ellipse-overlay"></div>
                         <img class="duet__image" src="images/fertilife.png" alt="Фертилайф">
                         <h3 class="duet__title">Фертилайф</h3>
                     </div>
@@ -152,6 +153,7 @@
                 <div class="duet__side duet__side--right">
                     <div class="duet__image-container">
                         <img class="duet__image-pack" src="images/fertivita-pack.png" alt="Фертивита упаковка">
+                        <div class="duet__image-ellipse-overlay"></div>
                         <img class="duet__image" src="images/fertivita.png" alt="Фертивита">
                         <h3 class="duet__title">Фертивита</h3>
                     </div>
@@ -205,7 +207,7 @@
     </div> <!-- Duet end -->
 
     <!-- Advantages -->
-    <div class="advantages">
+    <div class="advantages" id="advantages">
         <div class="advantages__inner main-container">
             <img class="divider" src="images/red-divider.svg" alt="divider">
 
@@ -233,7 +235,7 @@
                             </ul>
                         </div>
                     </div>
-                </div> <!-- TOp block end -->
+                </div> <!-- Top block end -->
 
                 <!-- Bottom block -->
                 <div class="advantages__block advantages__block--bottom">
@@ -278,7 +280,7 @@
     </div> <!-- Advantages end -->
 
     <!-- Advantages -->
-    <div class="order">
+    <div class="order" id="order">
         <div class="order__inner main-container">
             <img class="divider" src="images/blue-divider.svg" alt="divider">
             <h2 class="order__title main-title">Закажите Фертилайф и Фертивита сегодня и сделайте первый шаг к вашей
@@ -327,37 +329,40 @@
             <div class="footer__row">
                 <!-- Footer Left -->
                 <div class="footer__leftside">
-                    <h6 class="footer__title">Какойто текст текст текст текст текст текст текст текст</h6>
-                    <p class="footer__text">Какойто текст текст текст</p>
-                    <p class="footer__text">Какойто текст текст текст</p>
-                    <p class="footer__text">Какойто текст текст текст</p>
-                    <p class="footer__text">Какойто текст текст текст</p>
+                    <h6 class="footer__title">Организация, уполномоченная принимать <br> претензии от потребителей:</h6>
+                    <p class="footer__text">ТОО «Cepheus Medical» (Цефей Медикал),</p>
+                    <p class="footer__text">050045, РК, г. Алматы, пр-т Аль-Фараби, дом 7, </p>
+                    <p class="footer__text">ЖК «Нурлы Тау», блок 5А, офис 247,</p>
+                    <p class="footer__text">тел: +7 (727) 300 69 71, e-mail: cepheusmedical@gmail.com</p>
                     <br><br>
 
-                    <h6 class="footer__title">Какойто текст текст</h6>
-                    <p class="footer__text">Какойто текст текст текст</p>
+                    <h6 class="footer__title">По вопросам дистрибуции:</h6>
+                    <p class="footer__text">+7 (727) 271 80 78; +7 775 772 98 09, info@neolife.kz</p>
                 </div>
 
                 <!-- Footer Right -->
                 <div class="footer__rightside">
-                    <img class="albion-logo" src="images/albion-logo.svg" alt="albion">
+                    <h6 class="footer__title">Держатель свидетельства о <br> государственной регистрации (СГР):</h6>
+                    <p class="footer__text">SPEY MEDICAL Ltd,</p>
+                    <p class="footer__text">Lynton House 7-12 Tavistock Square, WC1H 9LT</p>
+                    <p class="footer__text">Лондон, Великобритания</p>
 
-                    <h6 class="footer__title">Какойто текст</h6>
-                    <p class="footer__text">Какойто текст текст текст</p>
-                    <p class="footer__text">Какойто текст текст текст</p>
-                    <p class="footer__text">Какойто текст текст текст</p>
-                    <br><br>
+                    <div class="footer__albion">
+                        <p class="footer__albion-text">
+                            Albion ™ является товарным знаком
+                            <br> Balchem Corp. или Albion Labs.
+                        </p>
 
-                    <h6 class="footer__title">Какойто текст текст текст текст текст текст текст текст</h6>
-                    <p class="footer__text">Какойто текст текст текст</p>
-                    <p class="footer__text">Какойто текст текст текст</p>
-                    <p class="footer__text">Какойто текст текст текст</p>
+                        <img class="footer__albion-logo" src="images/albion-logo.svg" alt="albion">
+                    </div>
+
+                    <img class="footer__base" src="images/footer-base.svg" alt="base">
                 </div>
             </div>
         </div>
     </footer>
 
-    <script src="assets/script.js" />
+    <script src="assets/script.js"></script>
 </body>
 
 </html>
