@@ -6,3 +6,6 @@ document.querySelectorAll('.navbar__link').forEach(anchor => {
         });
     });
 });
+
+
+document.querySelector(".scroll-top").addEventListener("click", function () { document.body.scrollIntoView({ block: "start", behavior: "smooth" }) });

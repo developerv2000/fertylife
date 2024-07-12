@@ -25,7 +25,9 @@ body {
 }
 
 .second-gradient-wrapper {
-    background: conic-gradient(from 0deg, #FBE8E9, #EDF4FB) repeat left top / cover;
+    background:
+        conic-gradient(from 0deg, #FBE8E9, #EDF4FB) no-repeat left calc(-100vh - 180px) / cover,
+        conic-gradient(from 180deg, #EDF4FB, #FBE8E9) no-repeat left top / 100% 4000vh;
 }
 
 *,
@@ -497,13 +499,13 @@ model-viewer {
 
 .advantages__block-leftside-icon {
     position: absolute;
-    right: 28px;
+    right: 74px;
     top: 0;
 }
 
 .advantages__block-rightside-icon {
     position: absolute;
-    left: 28px;
+    left: -16px;
     top: 0;
 }
 
@@ -612,4 +614,41 @@ model-viewer {
     bottom: 0px;
     left: 0%;
     width: 100%;
+}
+
+.scroll-top {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255 255 255 / 30%);
+    border-radius: 50%;
+    box-shadow: 0px 4px 4px rgb(0 95 150 / 5%);
+    z-index: 99;
+    cursor: pointer;
+    transition: 0.3s;
+    border: 0.5px solid transparent;
+}
+
+.scroll-top svg {
+    width: 30px;
+    transition: 0.3s;
+}
+
+.scroll-top svg path {
+    transition: 0.3s;
+}
+
+.scroll-top:hover {
+    background-color: rgb(255 255 255 / 85%);
+    box-shadow: 0px 4px 4px rgb(0 95 150 / 15%);
+    border-color: var(--main-color);
+} 
+
+.scroll-top:hover svg path {
+    fill-opacity: 1;
 }
