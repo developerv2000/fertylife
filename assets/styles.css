@@ -429,6 +429,14 @@ model-viewer {
     right: 0px;
 }
 
+.duet__side--left .model-viewer-wrapper {
+    margin-left: 40px;
+}
+
+.duet__side--right .model-viewer-wrapper {
+    margin-right: 40px;
+}
+
 .duet__action {
     display: flex;
     flex-direction: column;
