@@ -386,7 +386,6 @@ model-viewer {
 .duet__image-pack {
     position: absolute;
     top: 54px;
-    z-index: -1;
 }
 
 .duet__side--right .duet__image-pack {
