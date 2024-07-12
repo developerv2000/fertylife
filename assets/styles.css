@@ -18,9 +18,14 @@
 body {
     font-family: 'Candara', Calibri, Segoe, Segoe UI, Optima, Arial, sans-serif;
     color: var(--main-color);
-    background:
-        conic-gradient(from 180deg, #EDF4FB, #FBE8E9) no-repeat left top / 100% 4220px,
-        conic-gradient(from 0deg, #FBE8E9, #EDF4FB) repeat left 4220px / 100% calc(100% - 4220px);
+}
+
+.first-gradient-wrapper {
+    background: conic-gradient(from 180deg, #EDF4FB, #FBE8E9) no-repeat left top / cover;
+}
+
+.second-gradient-wrapper {
+    background: conic-gradient(from 0deg, #FBE8E9, #EDF4FB) repeat left top / cover;
 }
 
 *,
@@ -119,6 +124,7 @@ img {
     background-color: var(--secondary-color);
     border-radius: 12px;
     border: none;
+    cursor: pointer;
 }
 
 .main-button--iconed {
@@ -129,7 +135,7 @@ img {
     width: 100%;
     height: 580px;
     position: relative;
-    z-index: 999;
+    z-index: 10;
 }
 
 model-viewer {
@@ -586,7 +592,7 @@ model-viewer {
     gap: 32px;
     align-items: center;
     justify-content: flex-end;
-    margin-top: 32px;
+    margin-top: 54px;
 }
 
 .footer__albion-text {
