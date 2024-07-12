@@ -433,7 +433,7 @@ model-viewer {
 }
 
 .duet__side--right .model-viewer-wrapper {
-    margin-right: -40px;
+    margin-left: -40px;
 }
 
 .duet__action {
