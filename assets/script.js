@@ -24,3 +24,18 @@ function checkScroll() {
 
 // Add an event listener to the window scroll event
 window.addEventListener('scroll', checkScroll);
+
+const orderImage1 = document.querySelector('.order__image-1');
+const orderImage2 = document.querySelector('.order__image-2');
+
+// Function to toggle classes
+function toggleClasses() {
+    orderImage1.classList.toggle('order__image--focused');
+    orderImage1.classList.toggle('order__image--blured');
+    orderImage2.classList.toggle('order__image--focused');
+    orderImage2.classList.toggle('order__image--blured');
+}
+
+// Add event listeners to images
+orderImage1.addEventListener("click", toggleClasses);
+orderImage2.addEventListener("click", toggleClasses);
