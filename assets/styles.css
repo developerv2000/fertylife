@@ -469,6 +469,10 @@ model-viewer {
     line-height: 0;
 }
 
+.duet__side--left .duet__title {
+    left: -18px;
+}
+
 .duet__side--right .duet__title {
     right: 0px;
 }
