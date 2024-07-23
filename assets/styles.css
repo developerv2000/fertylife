@@ -312,9 +312,9 @@ model-viewer {
 
 .plan__desc-border {
     position: absolute;
-    top: -24px;
-    right: -12px;
-    width: 100%;
+    top: -32px;
+    right: 6px;
+    width: 720px;
     max-width: unset;
     z-index: 0;
 }
@@ -632,7 +632,7 @@ model-viewer {
 }
 
 .order__images-wrapper {
-    width: 48%;
+    flex-grow: 1;
     height: 400px;
     display: flex;
     position: relative;
@@ -641,33 +641,26 @@ model-viewer {
 
 .order__image-1,
 .order__image-2 {
-    transition: all 1s ease-in-out; /* Apply transition to all properties */
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
+    cursor: pointer;
 }
 
 .order__image--blured {
-    left: -120px;
-    width: 546px;
+    left: -60px;
+    width: 240px;
     z-index: 0;
     filter: blur(1.5px);
+    transition: left 0.3s linear, width 0.3s linear 0.3s, z-index 0s linear 0s, filter 0.3s linear 0.6s;
 }
 
 .order__image--focused {
-    left: 0;
-    width: 800px;
+    left: calc(100% - 580px);
+    width: 440px;
     z-index: 1;
     filter: blur(0);
-}
-
-@keyframes fadeEffect {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+    transition: left 0.3s linear, width 0.3s linear 0.3s, z-index 0s linear 0s, filter 0.3s linear 0.6s;
 }
 
 /* Footer */
@@ -677,7 +670,7 @@ model-viewer {
 
 .footer__inner {
     padding-top: 48px;
-    padding-bottom: 190px;
+    padding-bottom: 160px;
 }
 
 .footer__row {
@@ -709,7 +702,7 @@ model-viewer {
     gap: 32px;
     align-items: center;
     justify-content: flex-end;
-    margin-top: 54px;
+    margin-top: 24px;
 }
 
 .footer__albion-text {
