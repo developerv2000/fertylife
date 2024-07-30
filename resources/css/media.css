@@ -1,0 +1,11 @@
+@media screen and (min-width: 376px) {
+    .navbar {
+        height: 100% !important;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .navbar-toggler {
+        display: block;
+    }
+}

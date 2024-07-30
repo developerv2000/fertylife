@@ -1,0 +1,105 @@
+@import '../../public/plugins/normalize.css';
+
+@font-face {
+    font-family: 'Candara';
+    src: url('../../fonts/candara.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../../fonts/montserrat.ttf') format('truetype');
+}
+
+:root {
+    --main-color: #005F96;
+    --secondary-color: #F04E56;
+}
+
+body {
+    font-family: 'Candara', Calibri, Segoe, Segoe UI, Optima, Arial, sans-serif;
+    color: var(--main-color);
+}
+
+*,
+::after,
+::before {
+    box-sizing: border-box;
+}
+
+p {
+    font-size: 14px;
+    margin: 0 0 1em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 0.5rem;
+    line-height: 1.2;
+}
+
+img {
+    max-width: 100%;
+}
+
+.main-container {
+    max-width: 1640px;
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+/* Header */
+.header {
+    background-color: var(--main-color);
+}
+
+.header__inner {
+    padding-top: 28px;
+    padding-bottom: 28px;
+    max-width: 1740px;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    display: flex;
+}
+
+.logo__image {
+    height: 45px;
+    width: auto;
+}
+
+.navbar-toggler {
+    display: none;
+}
+
+.navbar {
+    display: flex;
+    gap: 32px;
+    font-family: 'Montserrat';
+}
+
+.navbar__link {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+/* Collapse */
+.collapse {
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.collapse:not(.collapse--open) {
+    height: 0px;
+}
