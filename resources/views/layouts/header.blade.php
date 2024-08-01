@@ -6,7 +6,7 @@
 
         <button class="navbar-toggler" data-click-action="toggle-collapse" data-collapse-selector=".navbar">toggle</button>
 
-        <nav class="collapse navbar">
+        <nav class="navbar collapse">
             <a class="navbar__link" href="#plan">Планирование</a>
             <a class="navbar__link" href="#duet">Для вас</a>
             <a class="navbar__link" href="#advantages">Комплекс</a>
