@@ -117,6 +117,39 @@ img {
     min-width: 100vw;
 }
 
+/* Main card */
+.main-card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.main-card__image {
+    width: 118px;
+}
+
+.main-card__title {
+    margin-bottom: 0px;
+}
+
+.main-card__subtitle {
+    margin: 0;
+    font-size: var(--medium-text-font-size);
+    font-weight: 400;
+}
+
+/* Main List */
+.main-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.main-list__li {
+    font-size: var(--small-text-font-size);
+}
+
+
 /* Header */
 .header {
     background-color: var(--main-color);
@@ -147,27 +180,7 @@ img {
     text-decoration: none;
 }
 
-/* Main card */
-.main-card {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
-
-.main-card__image {
-    width: 118px;
-}
-
-.main-card__title {
-    margin-bottom: 0px;
-}
-
-.main-card__subtitle {
-    margin: 0;
-    font-size: 37px;
-}
-
-/* Intro */
+/* ========== Intro ========== */
 .intro {
     position: relative;
     overflow: hidden;
@@ -263,7 +276,7 @@ img {
     right: 20px;
 }
 
-/* Plan */
+/* ========== Plan ========== */
 .plan {
     position: relative;
     overflow: hidden;
@@ -338,4 +351,146 @@ img {
     right: 0;
     bottom: 0;
     transform: rotate(20deg);
+}
+
+/* ========== Duet ========== */
+.duet {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(to right, #EEF4FB 50%, #FBE8EA 50%);
+}
+
+.duet__inner {
+    padding-top: 160px;
+    padding-bottom: 100px;
+}
+
+.duet__joined-icons {
+    position: absolute;
+    top: 420px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.duet__side {
+    position: relative;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.duet__side--left {
+    padding-right: 168px;
+}
+
+.duet__side--right {
+    padding-left: 168px;
+}
+
+.duet__side-head-andvantages-wrapper {
+    border-width: var(--bordered-text-border-width);
+    border-style: var(--bordered-text-border-style);
+}
+
+.duet__side--left .duet__side-head-andvantages-wrapper {
+    padding: 32px 0 32px 48px;
+    border-image: linear-gradient(90deg, #016097 50%, transparent 100%) 1 1 1 1;
+    border-image-outset: var(--bordered-text-border-image-outset);
+}
+
+.duet__side--right .duet__side-head-andvantages-wrapper {
+    padding: 32px 48px 32px 0;
+    border-image: linear-gradient(-90deg, #016097 50%, transparent 100%) 1 1 1 1;
+    border-image-outset: var(--bordered-text-border-image-outset);
+}
+
+/* Duet header */
+.duet__side-header {
+    position: relative;
+    padding-bottom: 140px;
+}
+
+.duet__ellipse {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    filter: blur(200px);
+    z-index: 0;
+}
+
+.duet__side--left .duet__ellipse {
+    background-color: rgb(0 95 150 / 10%);
+}
+
+.duet__side--right .duet__ellipse {
+    background-color: rgb(240 78 85 / 10%);
+}
+
+.duet__title {
+    position: absolute;
+    bottom: 40px;
+    writing-mode: vertical-lr;
+    font-size: 80px;
+    color: rgb(0 0 0 / 10%);
+    transform: scale(-1);
+    z-index: 90;
+    line-height: 0;
+}
+
+.duet__side--right .duet__title {
+    right: 18px;
+}
+
+.duet__side .model-viewer-wrapper {
+    width: 100%;
+    height: 580px;
+    position: relative;
+    z-index: 10;
+    margin-top: -218px;
+}
+
+.duet__side .model-viewer {
+    width: 100%;
+    height: 100%;
+}
+
+.duet__side--left .model-viewer-wrapper {
+    padding-left: 52px;
+}
+
+.duet__side--right .model-viewer-wrapper {
+    padding-right: 52px;
+}
+
+/* Duet advantages */
+.duet__advantages-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    z-index: 1;
+}
+
+.duet__advantage {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.duet__advantage-title {
+    margin-bottom: 0;
+}
+
+/* Duet instruction */
+.duet__side-instruction {
+    margin: auto auto 0;
+    text-decoration: none;
+}
+
+.duet__side-instruction .main-card__subtitle {
+    max-width: 200px;
 }
