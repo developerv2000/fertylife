@@ -95,9 +95,9 @@ function initializeNavbarLinks() {
 }
 
 // Initialize scroll top button
-// document.querySelector(".scroll-top").addEventListener("click", function () {
-//     document.body.scrollIntoView({ block: "start", behavior: "smooth" });
-// });
+document.querySelector(".scroll-top").addEventListener("click", function () {
+    document.body.scrollIntoView({ block: "start", behavior: "smooth" });
+});
 
 function initializeOrderImages() {
     const orderImage1 = document.querySelector('.order__image-1');
@@ -115,3 +115,19 @@ function initializeOrderImages() {
         orderImage2.classList.toggle('order__image--blured');
     }
 }
+
+// Function to check if the user has scrolled to the bottom
+function checkScroll() {
+    const notification = document.querySelector('.fixed-notification');
+    const scrollPosition = window.scrollY + window.innerHeight;
+    const documentHeight = document.documentElement.scrollHeight;
+
+    if (scrollPosition >= documentHeight) {
+        notification.classList.add('fixed-notification--fixed');
+    } else {
+        notification.classList.remove('fixed-notification--fixed');
+    }
+}
+
+// Add an event listener to the window scroll event
+window.addEventListener('scroll', checkScroll);

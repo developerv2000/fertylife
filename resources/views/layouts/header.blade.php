@@ -9,7 +9,7 @@
         <nav class="navbar collapse">
             <a class="navbar__link" href="#plan">Планирование</a>
             <a class="navbar__link" href="#duet">Для вас</a>
-            <a class="navbar__link" href="#advantages">Комплекс</a>
+            <a class="navbar__link" href="#about">Комплекс</a>
             <a class="navbar__link" href="#order">Где купить</a>
         </nav>
     </div>
