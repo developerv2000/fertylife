@@ -1,10 +1,8 @@
 @import '../../public/plugins/normalize.css';
 
 @font-face {
-    font-family: 'Candara';
-    src: url('../../fonts/candara.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+    font-family: 'CANDARA';
+    src: url('../../fonts/CANDARA.woff') format('woff');
 }
 
 @font-face {
@@ -26,7 +24,7 @@
 }
 
 body {
-    font-family: 'Candara', Calibri, Segoe, Segoe UI, Optima, Arial, sans-serif;
+    font-family: 'CANDARA', Calibri, Segoe, Segoe UI, Optima, Arial, sans-serif;
     color: var(--main-color);
     font-size: var(--small-text-font-size);
 }
@@ -207,7 +205,7 @@ img {
 }
 
 .intro__inner {
-    /* minus header */
+    /* 100vh - header height */
     min-height: calc(100vh - 100px);
     align-items: center;
     padding-top: 80px;
@@ -235,9 +233,8 @@ img {
     opacity: 30%;
     position: absolute;
     filter: blur(130px);
-    left: calc(50% - 160px);
-    top: calc(100% - 400px);
-    z-index: 1;
+    left: 80%;
+    top: 50%;
 }
 
 .intro__rightside-blue-ellipse {
@@ -306,13 +303,12 @@ img {
     min-height: 100vh;
     flex-direction: column;
     justify-content: center;
-    padding-top: 80px;
+    padding-top: 140px;
     padding-bottom: 80px;
 }
 
 /* Plan Row */
 .plan__row {
-    padding-top: 60px;
     display: flex;
     align-items: center;
     gap: 120px;
@@ -346,7 +342,7 @@ img {
     border-style: var(--bordered-text-border-style);
     border-image: linear-gradient(-155deg, #016097 0%, transparent 60%) 1;
     line-height: 1.2;
-    font-size: 37px;
+    font-size: var(--medium-text-font-size)
 }
 
 /* Plan Foot */
@@ -391,11 +387,9 @@ img {
 }
 
 .duet__side {
-    position: relative;
     width: 50%;
     display: flex;
     flex-direction: column;
-    gap: 60px;
 }
 
 .duet__side--left {
@@ -404,6 +398,17 @@ img {
 
 .duet__side--right {
     padding-left: 168px;
+}
+
+.duet__side-box {
+    height: 100%;
+}
+
+.duet__side-box-inner {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
 }
 
 .duet__side-head-andvantages-wrapper {
@@ -491,6 +496,10 @@ img {
     flex-direction: column;
     gap: 40px;
     z-index: 1;
+}
+
+.duet__side-icons {
+    display: none;
 }
 
 .duet__advantage {
@@ -643,7 +652,8 @@ img {
 /* Order images */
 .order__images-wrapper {
     position: relative;
-    width: 45%;
+    /* 100% - (.order__links width) - (80px for margin left) */
+    width: calc(100% - 820px - 80px);
     margin-left: auto;
 }
 
@@ -656,7 +666,8 @@ img {
 }
 
 .order__image--blured {
-    left: 20px;
+    /* 100% - (.order__image--focused width) - (self width / 2) - (80px for margin-right) */
+    left: calc(100% - 440px - 120px - 80px);
     width: 240px;
     z-index: 0;
     filter: blur(1.5px);
@@ -664,7 +675,8 @@ img {
 }
 
 .order__image--focused {
-    left: calc(100% - 520px);
+    /* 100% - (self width) - (80px for margin-right) */
+    left: calc(100% - 400px - 80px);
     width: 440px;
     z-index: 1;
     filter: blur(0);
@@ -737,7 +749,7 @@ img {
 .footer__albion-text {
     max-width: 380px;
     margin: 0;
-    font-size: 24px;
+    font-size: var(--small-text-font-size)
 }
 
 .footer__albion-logo {
@@ -781,6 +793,8 @@ img {
 .scroll-top {
     position: absolute;
     right: 48px;
+    top: 50%;
+    transform: translateY(-50%);
     width: 80px;
     height: 80px;
     display: flex;
