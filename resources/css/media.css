@@ -194,7 +194,6 @@
     .intro__box {
         width: 100%;
         text-align: center;
-        align-items: center;
         padding: var(--bordered-text-padding);
         border-width: var(--bordered-text-border-width);
         border-style: var(--bordered-text-border-style);
