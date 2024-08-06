@@ -47,7 +47,9 @@
                     <span class="notification__title-short">БАД К ПИЩЕ.</span> {{-- Only mobile devices --}}
                     НЕ ЯВЛЯЕТСЯ ЛЕКАРСТВОМ.
                 </h5>
-                <p class="notification__text">Перед применением препарата необходимо ознакомиться с инструкцией по применению.
+                <p class="notification__text">Перед применением препарата необходимо ознакомиться
+                    <br> {{-- Only mobile devices --}}
+                    с инструкцией по применению.
                 </p>
             </div>
         </div>

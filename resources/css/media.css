@@ -409,6 +409,7 @@
     .about__complex-blocks-wrapper {
         flex-direction: column;
         gap: 20px;
+        align-items: flex-start;
     }
 
     .about__complex-block-icon {
@@ -808,6 +809,10 @@
     }
 
     .notification__title-short {
+        display: inline;
+    }
+
+    .notification__text br {
         display: inline;
     }
 

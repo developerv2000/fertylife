@@ -836,6 +836,11 @@ img {
     margin-bottom: 0;
 }
 
+/* Only mobile */
+.notification__text br {
+    display: none;
+}
+
 .scroll-top {
     position: absolute;
     right: 48px;
