@@ -3,7 +3,7 @@
 <meta name="twitter:card" content="summary_large_image">
 
 <meta property="og:title" content="Фертилайф & Фертивита">
-<meta property="og:image" content="{{ asset('img/main/logo-share.png') }}">
+<meta property="og:image" content="{{ asset('img/main/share.png') }}">
 <meta property="og:image:alt" content="Фертилайф & Фертивита">
 
 <meta
