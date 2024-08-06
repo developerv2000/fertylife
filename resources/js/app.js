@@ -131,3 +131,10 @@ function checkScroll() {
 
 // Add an event listener to the window scroll event
 window.addEventListener('scroll', checkScroll);
+
+
+// Initialize navbar toggler
+document.querySelector('.navbar-toggler').addEventListener('click', (evt) => {
+    const toggler = evt.currentTarget;
+    toggler.classList.toggle('navbar-toggler--active');
+});

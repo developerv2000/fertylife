@@ -1,6 +1,12 @@
 <section class="about" id="about">
     <div class="about__inner main-container">
-        <x-divider color="red" />
+        {{-- Different colors for laptop & tablet, mobile devices --}}
+        <div class="divider">
+            <picture class="divider__picture">
+                <source srcset="{{ asset('img/main/blue-divider.svg') }}" media="(max-width: 1279px)">
+                <img class="divider__image" src="{{ asset('img/main/red-divider.svg') }}" alt="divider">
+            </picture>
+        </div>
 
         {{-- Top --}}
         <div class="about__top">

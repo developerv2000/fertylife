@@ -37,18 +37,22 @@
         </div>
     </div>
 
-    <!-- Fixed notification -->
+    {{-- Fixed notification --}}
     <div class="fixed-notification">
-        <!-- Bad Notification -->
+        {{-- Bad Notification --}}
         <div class="notification">
             <div class="notification__inner">
-                <h5 class="notification__title">БИОЛОГИЧЕСКИ АКТИВНАЯ ДОБАВКА К ПИЩЕ. НЕ ЯВЛЯЕТСЯ ЛЕКАРСТВОМ.</h5>
-                <p class="notification__text">Перед применением препарата необходимо ознакомиться с инструкцией
-                    по применению.</p>
+                <h5 class="notification__title">
+                    <span class="notification__title-long">БИОЛОГИЧЕСКИ АКТИВНАЯ ДОБАВКА К ПИЩЕ.</span>
+                    <span class="notification__title-short">БАД К ПИЩЕ.</span> {{-- Only mobile devices --}}
+                    НЕ ЯВЛЯЕТСЯ ЛЕКАРСТВОМ.
+                </h5>
+                <p class="notification__text">Перед применением препарата необходимо ознакомиться с инструкцией по применению.
+                </p>
             </div>
         </div>
 
-        <!-- Scroll Top -->
+        {{-- Scroll Top --}}
         <div class="scroll-top">
             <svg viewBox="0 0 46 71" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path

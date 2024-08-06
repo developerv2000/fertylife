@@ -6,8 +6,8 @@
 
         {{-- Leftside --}}
         <div class="duet__side duet__side--left">
-            <div class="duet__side-box"> {{-- For tablet and mobile border --}}
-                <div class="duet__side-box-inner">
+            <div class="duet__side-box"> {{-- For tablet and mobile container width limiter. Acts like a main container --}}
+                <div class="duet__side-box-inner"> {{-- For tablet and mobile border --}}
                     <div class="duet__side-head-andvantages-wrapper"> {{-- for laptop border --}}
 
                         {{-- Leftside header --}}
@@ -81,8 +81,13 @@
 
         {{-- Rightside --}}
         <div class="duet__side duet__side--right">
-            <div class="duet__side-box"> {{-- For tablet and mobile border --}}
-                <div class="duet__side-box-inner">
+            {{-- Visible only on tablet and mobile devices --}}
+            <div class="divider">
+                <img class="divider__image" src="{{ asset('img/main/red-divider.svg') }}" alt="divider">
+            </div>
+
+            <div class="duet__side-box"> {{-- For tablet and mobile container width limiter. Acts like a main container --}}
+                <div class="duet__side-box-inner"> {{-- For tablet and mobile border --}}
                     <div class="duet__side-head-andvantages-wrapper"> {{-- for laptop border --}}
                         {{-- Rightside header --}}
                         <div class="duet__side-header">

@@ -1,13 +1,22 @@
 <section class="order" id="order">
     <div class="order__inner main-container">
-        <x-divider color="blue" />
-        <h2 class="order__title main-title secondary-color">Закажите Фертилайф и Фертивита сегодня и сделайте первый шаг к вашей мечте!</h2>
+        {{-- Different colors for laptop & tablet, mobile devices --}}
+        <div class="divider">
+            <picture class="divider__picture">
+                <source srcset="{{ asset('img/main/red-divider.svg') }}" media="(max-width: 1279px)">
+                <img class="divider__image" src="{{ asset('img/main/blue-divider.svg') }}" alt="divider">
+            </picture>
+        </div>
 
-        <div class="order__offer">
-            <h5 class="order__offer-title secondary-title">Специальное предложение:</h5>
-            <p class="order__offer-text">При покупке Фертилайф и Фертивита одновременно скидка 10%!
-                <br> Не упустите шанс стать счастливыми родителями!
-            </p>
+        <div class="order__title-order-wrapper"> {{-- For table & mobile border --}}
+            <h2 class="order__title main-title secondary-color">Закажите Фертилайф и Фертивита сегодня и сделайте первый шаг к вашей мечте!</h2>
+
+            <div class="order__offer">
+                <h5 class="order__offer-title secondary-title">Специальное предложение:</h5>
+                <p class="order__offer-text">При покупке Фертилайф и Фертивита одновременно скидка 10%!
+                    <br> Не упустите шанс стать счастливыми родителями!
+                </p>
+            </div>
         </div>
 
         <div class="order__images-wrapper">
