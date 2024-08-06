@@ -28,9 +28,9 @@
             <h5 class="order__links-title secondary-title">Закажите Фертилайф и Фертивита уже сейчас!</h5>
 
             <div class="order__links-row">
-                <a class="order__links-button main-button" href="https://salomat.tj" target="_blank">Заказать</a>
+                <a class="order__links-button main-button" href="#" target="_blank">Заказать</a>
 
-                <a class="order__links-button main-button main-button--iconed" href="https://salomat.tj" target="_blank">
+                <a class="order__links-button main-button main-button--iconed" href="#" target="_blank">
                     <img class="order__links-button-icon" src="{{ asset('img/home/order-icon.svg') }}" alt="order">
                 </a>
             </div>

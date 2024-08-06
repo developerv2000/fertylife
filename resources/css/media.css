@@ -198,7 +198,7 @@
         padding: var(--bordered-text-padding);
         border-width: var(--bordered-text-border-width);
         border-style: var(--bordered-text-border-style);
-        border-image: linear-gradient(-122deg, transparent 0%, #016097 50%) 1;
+        border-image: linear-gradient(-80deg, transparent 10%, #016097 50%) 1;
         border-image-outset: var(--bordered-text-border-image-outset);
     }
 
@@ -238,7 +238,7 @@
         padding: var(--bordered-text-padding);
         border-width: var(--bordered-text-border-width);
         border-style: var(--bordered-text-border-style);
-        border-image: linear-gradient(122deg, transparent 0%, #016097 50%) 1;
+        border-image: linear-gradient(80deg, transparent 10%, #016097 50%) 1;
         border-image-outset: var(--bordered-text-border-image-outset);
     }
 
@@ -335,7 +335,7 @@
         padding: var(--bordered-text-padding);
         border-width: var(--bordered-text-border-width);
         border-style: var(--bordered-text-border-style);
-        border-image: linear-gradient(-124deg, transparent 0%, #016097 50%) 1;
+        border-image: linear-gradient(-80deg, transparent 10%, #016097 50%) 1;
         border-image-outset: var(--bordered-text-border-image-outset);
     }
 
@@ -421,7 +421,7 @@
     }
 
     .about__top {
-        border-image: linear-gradient(103deg, transparent 0%, #016097 50%) 1;
+        border-image: linear-gradient(65deg, transparent 10%, #016097 50%) 1;
         border-image-outset: var(--bordered-text-border-image-outset);
     }
 
@@ -441,7 +441,7 @@
         padding: var(--bordered-text-padding);
         border-width: var(--bordered-text-border-width);
         border-style: var(--bordered-text-border-style);
-        border-image: linear-gradient(79deg, transparent 0%, #016097 50%) 1;
+        border-image: linear-gradient(65deg, transparent 10%, #016097 50%) 1;
         border-image-outset: var(--bordered-text-border-image-outset);
     }
 
@@ -464,7 +464,7 @@
         padding: var(--bordered-text-padding);
         border-width: var(--bordered-text-border-width);
         border-style: var(--bordered-text-border-style);
-        border-image: linear-gradient(-79deg, transparent 0%, #016097 50%) 1;
+        border-image: linear-gradient(-90deg, transparent 0%, #016097 50%) 1;
         border-image-outset: var(--bordered-text-border-image-outset);
     }
 
@@ -623,11 +623,6 @@
         height: 200px;
     }
 
-    .plan__box {
-        border-image: linear-gradient(-128deg, transparent 0%, #016097 50%) 1;
-        border-image-outset: var(--bordered-text-border-image-outset);
-    }
-
     .plan__foot-title {
         margin-bottom: 20px;
     }
@@ -676,9 +671,17 @@
     }
 
     .duet__side-icons {
+        top: 36%;
+        right: -20px;
+    }
+
+    .duet__side--left .duet__side-icons {
         width: 80px;
-        top: 32%;
-        right: -8px;
+
+    }
+
+    .duet__side--right .duet__side-icons {
+        width: 70px;
     }
 
     .duet__side-instruction .main-card__subtitle {
