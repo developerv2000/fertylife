@@ -1,0 +1,18 @@
+{
+  "resources/css/app.css": {
+    "file": "app-Dq5fkfaA.css",
+    "src": "resources/css/app.css",
+    "isEntry": true
+  },
+  "resources/css/media.css": {
+    "file": "media-DzTMYjPV.css",
+    "src": "resources/css/media.css",
+    "isEntry": true
+  },
+  "resources/js/app.js": {
+    "file": "app-BZkYBrEv.js",
+    "name": "app",
+    "src": "resources/js/app.js",
+    "isEntry": true
+  }
+}
