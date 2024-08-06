@@ -786,7 +786,8 @@
     }
 
     .footer__albion-text {
-        max-width: 100%;
+        max-width: unset;
+        display: flex;
     }
 
     .footer__albion-logo {
